@@ -1,0 +1,30 @@
+<div class="row">
+    <div class="col-6">
+        <div class="col-3">
+            <label for="num1" class="form-label">Numero de grados a convertir</label>
+            <input type="text" [(ngModel)]='num' class="form-control" name="num" placeholder="Grados" >
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" [(ngModel)]='opcion'  type="radio" name="opcion" id="flexRadioDefault1" value="1"  >
+                <label class="form-check-label" for="flexRadioDefault1">
+                  De Celsius a Farenheit
+                </label>
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" [(ngModel)]='opcion' type="radio" name="opcion" id="flexRadioDefault2" value="2" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                  De Farenheit a Celsius
+                </label>
+        </div>
+             
+    </div>
+    <div class="mb-3">
+        <button (click)='operacion()' class="btn btn-primary">Calcular</button>
+
+    </div>
+    
+    <div class="col-6">
+        <h2>Resultado: {{resultado}}</h2>
+    </div>
+   
+</div>
