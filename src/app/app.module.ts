@@ -4,15 +4,22 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import {OperasBasComponent} from './formularios/operas-bas/operas-bas.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MultiplicacionAxbComponent } from './formularios/multiplicacion-axb/multiplicacion-axb.component';
+import {MatInputModule} from '@angular/material/input';
+import {MatButtonModule} from '@angular/material/button';
 @NgModule({
   declarations: [
     AppComponent,
-    OperasBasComponent
+    OperasBasComponent,
+    MultiplicacionAxbComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatInputModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
