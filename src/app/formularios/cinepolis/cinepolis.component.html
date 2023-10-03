@@ -1,0 +1,59 @@
+
+<link rel="stylesheet" type="text/css" href="cinepolis.component.css">
+
+<div class="contenedor">
+    <img src="https://seeklogo.com/images/C/Cinepolis-logo-320E05D958-seeklogo.com.png" alt="Imagen flotante">
+
+</div>
+
+<body style="background-color: lightskyblue;" >
+
+<div class="row">
+    <h1>Cinepolis</h1>
+    <div class="col-6">
+        <div class="col-6">
+            <label class="form-label">   Nombre comprador </label>
+            <input type="text" [(ngModel)]='nombre' class="form-control" name="nombre" placeholder="Nombre" >
+            <label class="form-label"> Cantidad de compradores </label>
+            <input type="number" [(ngModel)]='comp' class="form-control" name="comp" placeholder="Cantidad de Compradores"  min=1>
+        </div>
+        <label class="form-label">¿Pago con tarjeta CINECO?</label>
+        <div class="form-check">
+                <input class="form-check-input" [(ngModel)]='opcion'  type="radio" name="opcion" id="flexRadioDefault1" value="1"  >
+                <label class="form-check-label" for="flexRadioDefault1">
+                    Si
+                </label>
+        </div>
+        <div class="form-check">
+                <input class="form-check-input" [(ngModel)]='opcion' type="radio" name="opcion" id="flexRadioDefault2" value="2" >
+                <label class="form-check-label" for="flexRadioDefault2">
+                    No
+                </label>
+        </div>
+        <div class="col-7">
+            <label class="form-label"> Costo de Boleto: $12,000 </label>
+            <label class="form-label"> Numero de Boletos </label>
+            <input type="number" [(ngModel)]='num' class="form-control" name="num" placeholder="Numeros Boletos" min=1  >
+            
+             {{mensaje}}
+             <br>
+        </div>
+             
+    </div>
+    <div class="mb-6">
+        <button (click)='procesar()' class="btn btn-success">Procesar</button>
+        
+       
+    </div>
+    <div>
+   
+</div>
+    <div class="col-6">
+        <h2>Valor a pagar $: {{resultado}}</h2>
+    </div>
+   
+</div>
+
+
+
+</body>

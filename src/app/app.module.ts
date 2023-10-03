@@ -6,20 +6,24 @@ import { FormsModule } from '@angular/forms';
 import {OperasBasComponent} from './formularios/operas-bas/operas-bas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MultiplicacionAxbComponent } from './formularios/multiplicacion-axb/multiplicacion-axb.component';
-import {MatInputModule} from '@angular/material/input';
-import {MatButtonModule} from '@angular/material/button';
+import { MaterialModule } from './material/material/material.module';
+import { MenuComponent } from './menu/menu/menu.component';
+import { CinepolisComponent } from './formularios/cinepolis/cinepolis.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     OperasBasComponent,
-    MultiplicacionAxbComponent
+    MultiplicacionAxbComponent,
+    MenuComponent,
+    CinepolisComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
-    MatInputModule,
-    MatButtonModule,
+    MaterialModule,
+
   ],
   providers: [],
   bootstrap: [AppComponent]

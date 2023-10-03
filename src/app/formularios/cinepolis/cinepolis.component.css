@@ -1,0 +1,17 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    margin: 0;
+}
+
+.contenedor {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+}
